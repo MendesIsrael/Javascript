@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesde</title>
+    <style>
+        body {
+            background: rgb(3, 70, 70);
+            font: normal 20pt arial;
+            color: white;
+        }
+        p {
+            color: tomato;
+        }
+        div#res {
+            margin-top: 25px;
+        }
+        input {
+            font: normal 15pt arial;
+            width: 100px;
+        }
+        h1 {
+            background: black;
+            width: 500px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <p>Essa calculadora só faz calculo de soma</p>
+    <input type="number" name="tx1" id="tx1"> +
+    <input type="number" name="tx2" id="tx2">
+    <input type="button" value="somar" onclick="somar()">
+    <div id="res">Resultado</div>
+    <script>
+        alert("Carregando")
+        function somar() {
+            var tx1 = window.document.querySelector('input#tx1')
+            var tx2 = window.document.querySelector('input#tx2')
+            var res = window.document.querySelector('div#res')
+            var n1 = Number(tx1.value)
+            var n2 = Number(tx2.value)
+            var s = n1 + n2
+            res.innerHTML = `O resultado de ${n1} mais ${n2} dá ${s}`
+        }
+    </script>
+</body>
+</html>

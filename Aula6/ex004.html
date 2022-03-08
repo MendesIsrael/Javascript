@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 20pt arial;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        var nome = window.prompt("Qual é o seu nome")
+        document.write(`Olá, <strong>${nome}</strong>! seu nome tem ${nome.length} letras. <br/>`)//"document.write" quer dizer que ficará na pág
+        //A tag "<strong> </strong>" é para ficar em negrito
+        //A tag "<br/>" é para pular o resto da frase para a proxima linha
+        //".length", conta quantas letras tem a palavra
+        document.write(`Seu nome em maiúsculo é ${nome.toUpperCase()}`)
+        //".toUpperCase()" deixa a palavra em maiúsculo
+    </script>
+</body>
+</html>

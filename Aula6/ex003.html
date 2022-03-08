@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso site</title> <!--Nome do site (aba)-->
+    <style>
+        body {
+            background-color: rgb(5, 0, 0); /*Cor da página*/
+            color: rgb(255, 0, 140); /*Cor da letra do cabeçalho*/
+            font: normal 25pt arial; /*Fonte do título*/
+        }
+        h1 {
+            color: rgb(252, 252, 253); /*Mudando a cor do título h1*/
+        }
+    </style> <!--Fim do estilo-->
+</head> <!--Fim da "cabeça"-->
+<body> <!--É o corpo do site-->
+    <h1>Te amo, Rafa!</h1> <!--É o título da página do site - h1 é o nível do título--> 
+    <p>Gatinha, vai dar tudo certo</p> <!--"<p>" é um parágrafo-->
+    <script> //Início do java script
+        var n1 = Number(window.prompt("Digite um número")) //o "Number" transforma os String em números 
+        var n2 = Number(window.prompt("Digite outro número")) //o "var xxx =" é para dar atribuição a uma variável
+        var s = n1 + n2 //"+" serve para somar ou concatenar (depende se é string ou number) 
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
+    </script>
+</body>
+</html>
